@@ -11,9 +11,9 @@
 
 
 ## Download
-1. Model : [Pre-trained model](https://www.dropbox.com/home/LAB/DATA/faster_rcnn_nn)
+1. Model : [Pre-trained model](https://www.dropbox.com/sh/zeck2ha1tj92w9u/AABsQB_FP5LT48yBtW3DyhuWa?dl=0)
 2. Dataset : [Dataset](https://www.dropbox.com/s/vuq9q2yb56g9h22/VOCdevkit.tar?dl=0)
-
+3. Test : [Result](https://www.dropbox.com/s/gowycz52z05a61s/test.tar?dl=0)
 
 
 ## Requirements
