@@ -34,7 +34,9 @@ class jun_voc(Base):
 
     CATEGORY_TO_LABEL_DICT = {
         'background': 0,
-        'raccoon': 1
+        'raccoon': 1, 'fennec_fox': 2, 'Long-tailed_tit': 3, 'Rhinoceros': 4, 'pangolin': 5, 'seal': 6, 'bat': 7, 'dolphine': 8,
+        'tuna': 9, 'hawk': 10, 'parrot': 11, 'octopus': 12, 'reindeer': 13, 'alpaca': 14, 'Sunfish': 15, 'mosquito': 16, 'Goat': 17,
+        'Tarsier': 18, 'margay': 19, 'cuscus_animal': 20,
     }
 
     LABEL_TO_CATEGORY_DICT = {v: k for k, v in CATEGORY_TO_LABEL_DICT.items()}
@@ -60,7 +62,6 @@ class jun_voc(Base):
 
         self._image_id_to_annotation_dict = {}
         self._image_ratios = []
-
         for image_id in self._image_ids:
             path_to_annotation_xml = os.path.join(path_to_annotations_dir, f'{image_id}.xml')
             tree = ET.ElementTree(file=path_to_annotation_xml)
@@ -98,7 +99,7 @@ class jun_voc(Base):
         bboxes = torch.tensor(bboxes, dtype=torch.float)
         labels = torch.tensor(labels, dtype=torch.long)
 
-        image = Image.open(os.path.join(self._path_to_jpeg_images_dir, annotation.filename))
+        image = Image.open(os.path.join(self._path_to_jpeg_images_dir, annotation.filename)).convert('RGB')
 
         # random flip on only training mode
         if self._mode == jun_voc.Mode.TRAIN and random.random() > 0.5:
