@@ -8,4 +8,4 @@ if ! ([[ -n "${BACKBONE}" ]] && [[ -n "${CHECKPOINT}" ]] && [[ -n "${INPUT_IMAGE
     exit
 fi
 
-python infer.py -s=voc2007 -b=${BACKBONE} -c=${CHECKPOINT} ${INPUT_IMAGE} ${OUTPUT_IMAGE}
+python infer.py -s=jun_voc -b=${BACKBONE} -c=${CHECKPOINT} ${INPUT_IMAGE} ${OUTPUT_IMAGE}
