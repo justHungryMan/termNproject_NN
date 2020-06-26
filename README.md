@@ -28,18 +28,18 @@
 1. [Dataset](https://www.dropbox.com/s/vuq9q2yb56g9h22/VOCdevkit.tar?dl=0)
 2. Non Maximum Suppression and ROI Align modules
    ```
-   $ python easy-faster-rcnn.pytorch/support/setup.py develop
+   $ python support/setup.py develop
    ```
 
 ## Usage
 ---
 1. Train
     ```
-    bash ./easy-faster-rcnn.pytorch/script/voc2007/jun.sh resnet /path/to/train/dataset/dir
+    bash script/voc2007/jun.sh resnet101 /path/to/train/dataset/dir
     ```
 2. Infer
    ```
-   bash ./easy-faster-rcnn.pytorch/script/voc2007/infer.sh resnet /path/to/checkpoint.pth /path/to/test/dataset/dir /path/to/output/image/dir
+   bash script/voc2007/infer.sh resnet101 /path/to/checkpoint.pth /path/to/test/dataset/dir /path/to/output/image/dir
    ```
 
 ## Class not in ImageNet
