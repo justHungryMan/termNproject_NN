@@ -2,6 +2,15 @@
 ---
 [2020_1학기] 신경회로망특론 :  220200019 이성준
 
+## Video
+
+### PPT 영상
+[![Video Label](http://img.youtube.com/vi/gW9tOnp8MYE/0.jpg)](https://youtu.be/gW9tOnp8MYE?t=0s)
+
+
+### Demo 영상
+[![Video Label](http://img.youtube.com/vi/N1wZrDeef5w/0.jpg)](https://youtu.be/N1wZrDeef5w?t=0s)
+
 ## File & Directory
 1. crawling.py : 크롤링 코드
 2. coderunner.py : crawling.py 를 쉽게 실행하는 코드
